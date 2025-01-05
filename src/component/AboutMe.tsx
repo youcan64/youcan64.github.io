@@ -21,17 +21,17 @@ export default function AboutMe() {
           'With a strong foundation in Java and a passion for solving challenging problems, I strive to create impactful and scalable software.'
         }
       </Typography>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </Box>
   )
 }

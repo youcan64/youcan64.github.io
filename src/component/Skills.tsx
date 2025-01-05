@@ -8,8 +8,7 @@ import {
   PolarAngleAxis,
   PolarRadiusAxis,
 } from 'recharts'
-
-
+import { useInView } from 'react-intersection-observer'
 
 const containerStyle = {
   display: 'flex',
@@ -75,6 +74,7 @@ function RadarSkillFramework() {
     </Box>
   )
 }
+
 function RadarSkillLanguage() {
   const skills = [
     {
@@ -130,18 +130,27 @@ function RadarSkillLanguage() {
 }
 
 export default function Skills() {
+  const { ref, inView } = useInView({
+    rootMargin: '100px',
+    triggerOnce: true,
+  })
   return (
-    <Box textAlign="center">
-      <Typography variant="h4" sx={{ mb: 2 }}>
-        {'Skills'}
-      </Typography>
-      <Box style={containerStyle} justifyContent="center">
-        <Box style={itemStyle}>
-          <RadarSkillLanguage />
+    <Box ref={ref} height={300}>
+      {inView && (
+        <Box textAlign="center">
+          <Typography variant="h4" sx={{ mb: 2 }}>
+            {'Skills'}
+          </Typography>
+          <Box style={containerStyle} justifyContent="center">
+            <Box style={itemStyle}>
+              <RadarSkillLanguage />
+            </Box>
+            <Box style={itemStyle}>
+              <RadarSkillFramework />
+            </Box>
+          </Box>
         </Box>
-        <Box style={itemStyle}></Box>
-          <RadarSkillFramework />
-      </Box>
+      )}
     </Box>
   )
 }
