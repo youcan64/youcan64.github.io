@@ -2,10 +2,12 @@ import * as React from 'react'
 import Typography from '@mui/material/Typography'
 import Box from '@mui/material/Box'
 import Link from '@mui/material/Link'
+import Toolbar from '@mui/material/Toolbar'
 
 export default function Landing() {
   return (
     <Box textAlign="center">
+      <Toolbar />
       <Typography variant="h4" align="center" sx={{ mb: 2 }}>
         {"Welcome to Yosuke's page!"}
       </Typography>

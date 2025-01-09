@@ -1,6 +1,7 @@
 import * as React from 'react'
 import Typography from '@mui/material/Typography'
 import Box from '@mui/material/Box'
+import Toolbar from '@mui/material/Toolbar'
 import {
   Radar,
   RadarChart,
@@ -136,6 +137,7 @@ export default function Skills() {
   })
   return (
     <Box ref={ref} height={300}>
+      <Toolbar />
       {inView && (
         <Box textAlign="center">
           <Typography variant="h4" sx={{ mb: 2 }}>

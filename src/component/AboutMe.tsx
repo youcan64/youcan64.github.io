@@ -1,10 +1,12 @@
 import * as React from 'react'
 import Typography from '@mui/material/Typography'
 import Box from '@mui/material/Box'
+import Toolbar from '@mui/material/Toolbar'
 
 export default function AboutMe() {
   return (
     <Box textAlign="center">
+      <Toolbar />
       <Typography variant="h4" sx={{ mb: 2 }}>
         {'About me'}
       </Typography>
@@ -21,16 +23,6 @@ export default function AboutMe() {
           'With a strong foundation in Java and a passion for solving challenging problems, I strive to create impactful and scalable software.'
         }
       </Typography>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
       <br />
     </Box>
   )
