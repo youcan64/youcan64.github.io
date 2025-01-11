@@ -1,4 +1,3 @@
-import * as React from 'react'
 import * as ReactDOM from 'react-dom/client'
 import { ThemeProvider } from '@mui/material/styles'
 import theme from './theme'

@@ -1,4 +1,3 @@
-import * as React from 'react'
 import { Typography, Box, Toolbar } from '@mui/material';
 
 export default function AboutMe() {

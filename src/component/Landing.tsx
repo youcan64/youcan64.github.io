@@ -1,4 +1,3 @@
-import * as React from 'react'
 import { Typography, useMediaQuery, useTheme, Box, Toolbar } from '@mui/material';
 
 export default function Landing() {
