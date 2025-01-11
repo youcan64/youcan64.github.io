@@ -20,6 +20,9 @@ export default function Links() {
   return (
     <Box textAlign="center">
       <Toolbar />
+      <Typography variant="h4" sx={{ mb: 2 }}>
+        {'Links'}
+      </Typography>
       <Box style={containerStyle} justifyContent="center">
         <Box style={itemStyle}>
           <Link href="https://github.com/youcan64" target="_blank" rel="noopener noreferrer">

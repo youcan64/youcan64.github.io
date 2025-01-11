@@ -9,11 +9,11 @@ import AppBar from '@mui/material/AppBar'
 import Button from '@mui/material/Button'
 import Box from '@mui/material/Box'
 import Toolbar from '@mui/material/Toolbar'
-import IconButton from '@mui/material/IconButton'
-import MenuIcon from '@mui/icons-material/Menu'
 
 function Copyright() {
   return (
+    <Box
+    sx={{ padding: 2, }}>
     <Typography
       variant="body2"
       align="center"
@@ -24,6 +24,7 @@ function Copyright() {
       {'Copyright ©Yosuke Ozawa '}
       {new Date().getFullYear()}.
     </Typography>
+    </Box>
   )
 }
 
@@ -55,7 +56,12 @@ export default function App() {
 
   const MyAppBar = () => {
     return (
-      <AppBar position="sticky">
+      <AppBar position="sticky" elevation={0} sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        backgroundColor: 'background.default',
+        color: 'text.primary',
+      }}>
         <Toolbar>
           <Box sx={{ flexGrow: 1 }}>
           </Box>
@@ -77,9 +83,13 @@ export default function App() {
   }
 
   return (
-    <Container>
+    <Container maxWidth={false} sx={{
+      backgroundColor: 'background.default',
+      color: 'text.primary',
+      height: '100vh',
+    }} >
       <MyAppBar />
-      <Container maxWidth="sm">
+      <Container >
         <Box ref={landingRef}>
           <Landing />
         </Box>
@@ -92,8 +102,8 @@ export default function App() {
         <Box ref={linksRef}>
           <Links />
         </Box>
+        <Copyright />
       </Container>
-      <Copyright />
     </Container>
   )
 }

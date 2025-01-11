@@ -1,7 +1,5 @@
 import * as React from 'react'
-import Typography from '@mui/material/Typography'
-import Box from '@mui/material/Box'
-import Toolbar from '@mui/material/Toolbar'
+import { Typography, Box, Toolbar } from '@mui/material';
 
 export default function AboutMe() {
   return (
@@ -12,7 +10,7 @@ export default function AboutMe() {
       </Typography>
       <Typography variant="body1" sx={{ mb: 2 }}>
         {
-          'I am a dedicated software engineer with 4+ years of experience in designing and implementing solutions in the financial sector. '
+          'I am a dedicated software engineer with'} {new Date().getFullYear() - 2021}{'+ years of experience in designing and implementing solutions in the financial sector. '
         }
         <br />
         {

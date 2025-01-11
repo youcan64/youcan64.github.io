@@ -11,15 +11,6 @@ import {
 } from 'recharts'
 import { useInView } from 'react-intersection-observer'
 
-const containerStyle = {
-  display: 'flex',
-  gap: '10px',
-}
-
-const itemStyle = {
-  padding: '10px',
-}
-
 const skillFullmark = 5
 
 function RadarSkillFramework() {
@@ -136,18 +127,18 @@ export default function Skills() {
     triggerOnce: true,
   })
   return (
-    <Box ref={ref} height={300}>
+    <Box ref={ref}>
       <Toolbar />
       {inView && (
         <Box textAlign="center">
           <Typography variant="h4" sx={{ mb: 2 }}>
             {'Skills'}
           </Typography>
-          <Box style={containerStyle} justifyContent="center">
-            <Box style={itemStyle}>
+          <Box sx={{display: 'flex', flexDirection: { xs: 'column', sm: 'row', alignItems: 'center', }, }} justifyContent="center" >
+            <Box sx={{display: 'flex',}}>
               <RadarSkillLanguage />
             </Box>
-            <Box style={itemStyle}>
+            <Box sx={{display: 'flex',}}>
               <RadarSkillFramework />
             </Box>
           </Box>
