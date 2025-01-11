@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "fix": "prettier --write . && eslint --fix"
   },
   "dependencies": {
@@ -33,6 +33,7 @@
     "@vitejs/plugin-react": "latest",
     "eslint": "^9.17.0",
     "eslint-plugin-react": "^7.37.3",
+    "gh-pages": "^6.3.0",
     "globals": "^15.14.0",
     "prettier": "^3.4.2",
     "react-anchor-link-smooth-scroll": "^1.0.12",
