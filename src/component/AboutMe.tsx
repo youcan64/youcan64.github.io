@@ -13,7 +13,7 @@ export default function AboutMe() {
         }
         <br />
         {
-          'Currently at Goldman Sachs, I specialize in building robust settlement systems that enhance operational workflows. '
+          'I specialize in building robust settlement systems that enhance operational workflows. '
         }
         <br />
         {
