@@ -9,11 +9,7 @@ export default function AboutMe() {
       </Typography>
       <Typography variant="body1" sx={{ mb: 2 }}>
         {
-          'I am a dedicated software engineer with'} {new Date().getFullYear() - 2021}{'+ years of experience in designing and implementing solutions in the financial sector. '
-        }
-        <br />
-        {
-          'I specialize in building robust settlement systems that enhance operational workflows. '
+          'I am a dedicated software engineer with'} {new Date().getFullYear() - 2021}{'+ years of experience. '
         }
         <br />
         {
